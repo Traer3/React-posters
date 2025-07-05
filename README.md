@@ -1,1 +1,1 @@
-Posters
+![demo video](./public/posters.gif)
