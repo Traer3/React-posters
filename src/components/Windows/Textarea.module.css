@@ -1,0 +1,42 @@
+:root{
+    --RWS-border: rgba(255,80,80,0.3);
+    --RWT-border: 0.2em solid rgba(255,80,80,0.3);
+    --RW-background:rgba(255,80,80,0.2);
+    --RW-shadow:rgba(255,60,60,0.4);
+}
+
+
+.myTextarea{
+    
+    border: none;
+    outline: none;
+    border-radius: 0.4em;
+    background-color: transparent;
+    width: 100%;
+    resize: both;
+    padding: 0.5em;
+    font-size: inherit;
+    color: inherit;
+    overflow: auto;
+    max-height: 100vh;
+}
+
+:global(textarea::-webkit-scrollbar){
+    width: 0.6em;
+}
+
+
+:global(textarea::-webkit-scrollbar-track){
+    background: var(--RW-background);
+    border-radius: 0.4em;
+}
+
+:global(textarea::-webkit-scrollbar-thumb){
+    background-color: var(--RW-shadow);
+    border: 0.15em solid var(--RW-background);
+    border-radius: 0.4em;
+}
+
+:global(textarea::-webkit-scrollbar-thumb:hover){
+    background-color: rgba(255,60,60,0.6);
+}

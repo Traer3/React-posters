@@ -1,0 +1,80 @@
+:root{
+    --textColor:#ffffff;
+    --fontFamily: Arial, sans-serif;
+
+    --minFontSize: 0.1rem;
+    --defaultFontSize: 0.8vw;
+    --maxFontSize: 3rem;
+
+    --border: 1px solid rgba(95,145,255,0.3);
+    --borderRadius: 0.2em;
+    --backgroundColor: rgba(95,145,255,0.2);
+    --shadow: rgba(105,155,255,0.4);
+}
+
+.LogIn{
+    border: var(--border);
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column;
+    background: var(--backgroundColor);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 var(--borderRadius) 10px var(--backgroundColor), 0 0 15px var(--shadow);
+    color: var(--textColor);
+    width: clamp(20px, 8vw, 10vw);
+    margin: 0.4em;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontFamily);
+    font-size: clamp(var(--minFontSize), var(--defaultFontSize), var(--maxFontSize));
+    text-align: center;   
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table{
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    input{
+        border: var(--border);
+        border-radius: var(--borderRadius);
+        background: var(--backgroundColor);
+        backdrop-filter: blur(10px);
+        background-color: transparent;
+        margin: 0.4em;
+        width: clamp(20px, 7.5vw, 10vw);
+        font-family: var(--fontFamily);
+        font-size: clamp(var(--minFontSize), var(--defaultFontSize), var(--maxFontSize));
+        text-align: center;   
+    }
+
+    button{
+        border: var(--border);
+        border-radius: var(--borderRadius);
+        background: var(--backgroundColor);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 var(--borderRadius) 10px var(--backgroundColor), 0 0 15px var(--shadow);
+        background-color: rgb(93, 141, 247);
+        margin: 0.2em;
+        width: clamp(20px, max-content, 10vw);
+        height: clamp(30px, max-content, 10vh);
+        font-family: var(--fontFamily);
+        font-size: clamp(var(--minFontSize), var(--defaultFontSize), var(--maxFontSize));
+        text-align: center;   
+    }
+    th{
+        border: 0.1em solid rgba(62, 94, 157);
+        padding: 0.7em;
+    }
+    td{
+        border: 0.1em solid rgba(62, 94, 157);
+        padding: 0.7em;
+    }
+    
+}
